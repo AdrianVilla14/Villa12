@@ -1,0 +1,60 @@
+header {
+    background-color: darkgoldenrod;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 20px 0; /* Adjust padding as needed */
+    height: 150px;
+}
+header :hover {
+    color: #ddd; /* Lighter color on hover */
+}
+footer{
+    background-color: coral;
+    background-size: cover;
+    height: 50px;
+}
+body {
+    background-color: burlywood;
+}
+h4 { /* fatwood con*/
+    font-family: cursive;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+    color: black;
+    margin: 20px 0; /* Adds space between items */
+    width: 180px;
+    padding: 20px; /* Adds space inside the item */
+    border: 2px solid #ccc; /*Adds a border around each item */
+    border-radius: 5px; /* Rounds the corners of the border */
+    background-color: bisque; /* Sets a light background color */
+}
+
+h3 {
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    color:black;
+}
+.fatcon {
+  font-style: italic;
+}
+
+.content{
+    margin: 20px 0; /* Adds space between items */
+    padding: 5px; /* Adds space inside the item */
+    border: 2px solid #ccc; /*Adds a border around each item */
+    border-radius: 5px; /* Rounds the corners of the border */
+    background-color:bisque; /* Sets a light background color */
+    width: 900px;
+}
