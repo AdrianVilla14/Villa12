@@ -52,9 +52,9 @@ h1 {
 
 .content{
     margin: 20px 0; /* Adds space between items */
-    padding: 5px; /* Adds space inside the item */
-    border: 2px solid #ccc; /*Adds a border around each item */
-    border-radius: 5px; /* Rounds the corners of the border */
+    padding: 5px; /*space inside aka pushes the item from boader inter */
+    border: 2px solid #ccc; /*boader weight aka adds border around each item */
+    border-radius: 5px; /*  radius softems egde on box aka rounds the corners of the border */
     background-color:bisque; /* Sets a light background color */
     width: 900px;
 }
