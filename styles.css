@@ -1,50 +1,167 @@
 *{
-    Margin: 0;
-    Padding: 0;
-    Box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 /*_____________________________*/
+
 header {
-    background-color: darkgoldenrod;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    padding: 0px; /* Adjust padding as needed */
-    height: 100px;
-    position: sticky;
-    top: 0;
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    background: #ffffff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header .logo{
+    font-weight: bolder;
+    font-size: 25px;
+    color: #333;
+
+}
+
+header .navbar ul {
+ list-style:none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+font-size: 20px;
+padding: 20px;
+color: #333;
+display: block;
+}
+
+header .navbar ul li a:hover {
+    background: #333;
+    color:#ffff;
+}
+
+header .navbar ul li ul {
+    position: absolute;
     left: 0;
-    right: 0;
-    z-index:10
+    width: 200px;
+    background: #fff;
+    display: none;
 }
-header :hover {
-    color: #ddd; /* Lighter color on hover */
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+header .navbar ul li ul li ul {
+    left:200px;
+    top:0;
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+    display: initial;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20px;
+    color:#333;
+    cursor: pointer;
+    display: none;
 }
 
 
-img {
-    display: block url('https://i.ebayimg.com/images/g/ByIAAOSwwB9mwl2l/s-l1600.jpg');
-    margin-left: 225px;
+
+
+
+@media(max-width:991px) {
+    header{
+        padding: 20px;
+    }
     
-  }
-/*
-  .spec {
-    margin: 40px auto;
-    padding: 20px 30px 40px 30px;
-    background-color: #FFFFFF;
-    overflow: auto;
-    width: 75%;
-    border-radius: 4px;
-    align-self: center;
+    header label {
+        display: initial;
+    }
+
+    header .navbar {
+        position: absolute;
+        top:100%;left: 0;right: 0;
+        background: #fff;
+        border-top: 1px solid rgba(0,0,0,.1);
+        display: none;
+    }
+
+    header .navbar ul li {
+    width: 100%;
+    }
+
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li {
+        background: #eee;
+    }
+
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display:initial;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .blox {
+    background-image: radial-gradient( #451B0F,#512316);
+    margin-top: 75px;
+    margin-bottom: 100px;
   }
 
-*/
+   .spec {
+    margin: 30px, 0;
+    padding: 5px; /* Adds space inside the item */
+    border: 2px solid #ccc; /*Adds a border around each item */
+    border-radius: 5px; /* Rounds the corners of the border */
+    background-color:#f5f5f5; /* Sets a light background color */
+    width: 900px;
+    margin-left: 200px;
+  } 
+
+
 
 body {
-    background-image: linear-gradient(20deg, #deb887, #deb860);
-    background-color: blu;
+    background-image: linear-gradient(20deg, #f8fcff, #f0f8ff);
 }
+
 h4 { /* fatwood con*/
     font-family: cursive;
     text-align: center;
@@ -57,7 +174,7 @@ h4 { /* fatwood con*/
     padding: 10px; /* Adds space inside the item */
     border: 2px solid #ccc; /*Adds a border around each item */
     border-radius: 5px; /* Rounds the corners of the border */
-    background-color: bisque; /* Sets a light background color */
+    background-color: #ffe4c4; /* Sets a light background color */
 }
 
 h3 {
@@ -68,328 +185,34 @@ h3 {
     text-align: center;
 }
 
-h1 {
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 100px;
-    font-weight: bold;
-    color:black;
-}
-.fatcon {
- color: black;
-text-align:center;
-text-decoration: none;
-left: 80;
-right: 0;
 
+.box1list {
+ color: black;
+display: inline;
+text-decoration: none;
+list-style-type: none; /* Remove bullet points */
 }
 
 .content{
-    margin: 30px 0px;
+    margin: 100px;
     padding: 5px; /* Adds space inside the item */
     border: 2px solid #ccc; /*Adds a border around each item */
     border-radius: 5px; /* Rounds the corners of the border */
-    background-color:bisque; /* Sets a light background color */
+    background-color:#f5f5f5; /* Sets a light background color */
     width: 900px;
     margin-left: 200px;
 }
 
 /* the X on pop ups css*/
-a {
-    display: inline-block;
-    width: 200px;
-    padding: 1rem;
-    text-align: center;
-    color: #fff;
-    font-weight: bolder;
-    text-transform: uppercase;
-    border: 1px solid rgb(200, 104, 69);
-    background-color: rgb(200, 104, 69);
-    border-radius: 8px;
-    /*position: ;*/
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0px;
- }
- #resinb a {
-    font-size: large;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    display: inline;
-    border: none;
-    background-color:bisque;
-    border-radius: 0; 
-    color: blueviolet;
-    text-transform: none;
-    transform: none;
-    top: 0;
-    left: 0;
-    width: 0;
-    font-weight: 100 
-
- }
-
- #resinb a:hover {
-    color: rgb(215, 170, 215); /* highlights color on hover */ 
-  }
-
-/*------ list of damages causes of pine's -------------------------*/
-
-nav {
-    background-color:rgb(199, 159, 105); /* Dark background for the nav */
-    text-align: center; /* Center the nav items */
-    padding: 50px 0; /* Add padding for spacing */
-    display: block;
-    block-size: 100px;
-}
-
-nav ul {
-    list-style-type: none; /* Remove bullet points */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-}
-
-nav li {
-    display: inline; /* Display list items in a row */
-    margin: 0 15px; /* Add space between items */
-}
-
-nav a {
-    color: lightgoldenrodyellow; /* text color for links */
-    text-decoration: none; /* Remove underline from links */
-    font-family: Helvetica; 
-    font-weight: bold; 
-}
-
-nav a:hover {
-    color: #ddd; /* highlights color on hover */
-}
-
-@media only screen and (max-width: 990px) {
-    nav {
-        background-color:rgb(199, 159, 105); /* Dark background for the nav */
-        text-align: center; /* Center the nav items */
-        padding: 50px 0; /* Add padding for spacing */
-        display: block;
-        block-size: 100px;
-    }
-    
-    nav ul {
-        list-style-type: none; /* Remove bullet points */
-        margin: 0; /* Remove default margin */
-        padding: 0; /* Remove default padding */
-    }
-    
-    nav li {
-        display: inline; /* Display list items in a row */
-        margin: 0 15px; /* Add space between items */
-    }
-    
-    nav a {
-        color: lightgoldenrodyellow; /* text color for links */
-        text-decoration: none; /* Remove underline from links */
-        font-family: Helvetica; 
-        font-weight: bold; 
-    }
-    
-    nav a:hover {
-        color: #ddd; /* highlights color on hover */
-    }
-}
-
 /*------------Bear scracthes image popup----------------------------------------------------------------------------------*/
-#bearcs {
-    height: 50vh;
-    width: 60%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    opacity: 0;
-    visibility: hidden;
-    transition: all .75s;
-    text-align: center;
-    color: #fff;
-    transform: scale(0.25);
- }
 
- #bearcs:target {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1);
-    transition: all .85s;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    margin-inline:-100px;
 
- }
-  /* needs to be moved down 100px*/
-  
- #bearcs a {
-    position:fixed;
-    height: 30px;
-    width: 30px;
-    border-radius: 1px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 32px;
-    margin-left: 330px;
-    bottom: 0px;
-    top: 0px;
- }
- /*---------- Woodpecker image popup--------------------------------------------------*/
- #woodpeckerscs {
-    height: 50vh;
-    width: 60%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    opacity: 0;
-    visibility: hidden;
-    transition: all .75s;
-    text-align: center;
-    color: #fff;
-    transform: scale(0.25);
- }
-
- #woodpeckerscs:target {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1);
-    transition: all .85s;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    margin-inline:-150px;
-
- }
-  
- #woodpeckerscs a {
-    position:fixed;
-    height: 30px;
-    width: 30px;
-    border-radius: 1px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 32px;
-    margin-left: 250px;
-    bottom: 0px;
-    top: 0px;
- }
-/*-----------Termites image popup--------------------------------------------*/
-#termitesD {
-    height: 50vh;
-    width: 60%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    opacity: 0;
-    visibility: hidden;
-    transition: all .75s;
-    text-align: center;
-    color: #fff;
-    transform: scale(0.25);
- }
-
- #termitesD:target {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1);
-    transition: all .85s;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    margin-inline:-150px;
-
-    
- }
-  
- #termitesD a {
-    position:fixed;
-    height: 30px;
-    width: 30px;
-    border-radius: 1px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 32px;
-    margin-left: 280px;
-    bottom: 0px;
-    top: 0px;
-    margin: 5px,0;
- }
-
-/**/
-
- #pbreak {
-    height: 50vh;
-    width: 60%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    opacity: 0;
-    visibility: hidden;
-    transition: all .75s;
-    text-align: center;
-    color: #fff;
-    transform: scale(0.25);
- }
-
- #pbreak:target {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1);
-    transition: all .85s;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    margin-inline:-100px;
-}
-  /* needs to be moved down 100px*/
-  
- #pbreak a {
-    position:fixed;
-    height: 30px;
-    width: 30px;
-    border-radius: 1px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 32px;
-    margin-left: 300px;
-    bottom: 0px;
-    top: 0px;
- }
  
  footer{
-    background-color: coral;
+    background-color: #004a87;
     background-size: cover;
     height: 200px;
 }
  
 
 
-.center {
-    align-items: url('https://assets.leevalley.com/Size4/10124/45K1781-fatwood-1-1-2-lb-u-0108.jpg');
-    
-}
