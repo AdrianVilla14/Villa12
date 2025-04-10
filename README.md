@@ -1,1 +1,6 @@
-# Fatwood
+# villa web
+THIS WEBSITE IS UNDER CONTRACT OF GITHUB (public users)
+ANY ATTEMPT TO COPY OR TO REPRODUCE ANY CONTENT OR HTML,CSS,JAVA
+WILL BE INVOILATION OF CONTRACT AND COMDEMED TO COURT VARYING ON LOCATION AND NATOINALITY
+< Adrian Villalon >  AUTHOR of VILLAWEB12
+does not permit any use of wensite nor domain for improper use of distribution 
