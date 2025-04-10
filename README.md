@@ -4,3 +4,5 @@ ANY ATTEMPT TO COPY OR TO REPRODUCE ANY CONTENT OR HTML,CSS,JAVA
 WILL BE INVOILATION OF CONTRACT AND COMDEMED TO COURT VARYING ON LOCATION AND NATOINALITY
 < Adrian Villalon >  AUTHOR of VILLAWEB12
 does not permit any use of wensite nor domain for improper use of distribution 
+VOILATION OF ANY OF THESE ACTIONS
+will result in fines up too $250.00 USD
