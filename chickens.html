@@ -1,18 +1,93 @@
 <!DOCTYPE html>
 <html>
-    <header>
-         <div>
-            <a href="index.html">Back to home page</a>
-         </div>
-    </header>
+    
+      <header>
+
+        <a href="#" class="logo">Villalon's Farm Livestock</a>
+   
+        <input type="checkbox"  id="menu-bar">
+        <label for="menu-bar">Menu</label>
+   
+           <nav class="navbar">
+               <ul>
+                   <li>
+                      <a href="index.html">Home</a>
+                   </li> 
+                   <li>
+                       <a href="aboutus.html">About us</a>
+                   </li>
+                   <li> <a href="#"> Languages 🢓</a>
+                       <ul>
+                           <li><a href="#"> English</a>
+                           <ul>
+                               <li><a href="#">Translate to English'</a></li>
+                           </ul>
+                       </li>
+                           <li><a href="#"> Espanol</a>
+                               <ul>
+                                   <li><a href="#">Traducir al Español'</a></li>
+                               </ul>                        
+                           </li>
+                       </ul> 
+                   </li>
+                   <li>
+                       <a href="eggs.html"> Eggs</a>
+                   </li>
+                   <li>
+                       <a href="chickens.html"> Chickens</a>
+                   </li>
+                   <li>
+                       <a href="order.html">Order</a>
+                   </li>
+                   </ul>
+                   
+           </nav>
+   
+       </header>
+    
     <head>
-    <title>
-      Villalon's Chickens &amp; breeds
-    </title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Villalon's Chickens &amp; breeds</title>
+    <link rel="stylesheet" href="styles2.css">
     </head>
 
     
     <body>
-<p></p>
+      <div class="container">
+
+        <div class="image-container">
+          <div class="image"><img src="https://raw.githubusercontent.com/AdrianVilla14/Fatwood/refs/heads/main/black%20chick.jpg" alt="chicken"/></div>
+          <div class="image"><img src="https://raw.githubusercontent.com/AdrianVilla14/Fatwood/refs/heads/main/yellow2.jpg" alt="chicken"/></div>
+          <div class="image"><img src="https://raw.githubusercontent.com/AdrianVilla14/Fatwood/refs/heads/main/IMG_20250409_192843.png" alt="chicken"/></div>
+          <div class="image"><img src="https://raw.githubusercontent.com/AdrianVilla14/Fatwood/refs/heads/main/IMG_20250409_192220.png" alt="chicken"/></div>
+          <div class="image"><img src="https://raw.githubusercontent.com/AdrianVilla14/Fatwood/refs/heads/main/IMG_20250409_192047.png" alt="chicken"/></div>
+
+        </div>
+
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="https://raw.githubusercontent.com/AdrianVilla14/Fatwood/refs/heads/main/black%20chick.jpg" alt=""/>
+
+        </div>
+
+
+        <script>
+
+        document.querySelectorAll('.image-container img').forEach(image=>{
+          image.onclick=()=>{
+            document.querySelector('.popup-image').style.display = 'block';
+            document.querySelector('.popup-image img').src = image.getAttribute('src');
+
+          }
+        });
+
+        document.querySelector('.popup-image span').onclick =() => {
+          document.querySelector('.popup-image').style.display = 'none';
+
+        }
+
+        </script>
     </body>
 </html>

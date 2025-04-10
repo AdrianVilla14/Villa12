@@ -11,7 +11,7 @@ header {
     position: fixed;
     top: 0;left: 0;right: 0;
     background: #ffffff;
-    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    box-shadow: 0 5px 10px #0000001a;
     padding: 0px 7%;
     display: flex;
     align-items: center;
@@ -20,8 +20,10 @@ header {
 }
 header .logo{
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 50px;
     color: #333;
+    text-decoration: none;
+    font-family: cursive;
 
 }
 
@@ -56,7 +58,7 @@ header .navbar ul li ul {
 
 header .navbar ul li ul li {
     width: 100%;
-    border-top: 1px solid rgba(0,0,0,.1);
+    border-top: 1px solid #0000001a;
 }
 
 header .navbar ul li ul li ul {
@@ -96,7 +98,7 @@ header label {
         position: absolute;
         top:100%;left: 0;right: 0;
         background: #fff;
-        border-top: 1px solid rgba(0,0,0,.1);
+        border-top: 1px solid #0000001a;
         display: none;
     }
 
@@ -122,14 +124,43 @@ header label {
         display:initial;
     }
 
-
-
 }
 
 
 
+.container {
+    position: relative;
+    min-height: 100vh;
+    background-image: radial-gradient( #451B0F,#512316);
+}
 
+.container .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
 
+.container .image-container .image {
+    height: 350px;
+    width: 450px;
+    border: 5px solid #ffff;
+    box-shadow: 0 5px 15px black;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.container .image-container .image img{
+    height: 350px;
+    width: 450px;
+    object-fit: cover;
+    transition:  .2s linear;
+}
+
+.container .image-container .image:hover img{
+transform: scale(1.1);
+}
 
 
 
@@ -144,6 +175,7 @@ header label {
     background-image: radial-gradient( #451B0F,#512316);
     margin-top: 75px;
     margin-bottom: 100px;
+    padding: 15px;
   }
 
    .spec {
@@ -154,7 +186,95 @@ header label {
     background-color:#f5f5f5; /* Sets a light background color */
     width: 900px;
     margin-left: 200px;
+    height: 700px;
+    overflow: hidden;
   } 
+.specL4 {
+    justify-content:space-between;
+    display: flex;
+    gap:15px
+}
+
+
+
+  .container2 {
+    position: relative;
+    min-height: 100vh;
+    background-image: radial-gradient( #451B0F,#512316);
+    display: inline;
+}
+
+.container2 .image-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container2 .image-container2 .image2 {
+    height: 950px;
+    width: 650px;
+    border: 5px solid #ffff;
+    box-shadow: 0 5px 15px black;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.container2 .image-container2 .image2 img{
+    height: 950px;
+    width: 650px;
+    object-fit: cover;
+    transition:  .2s linear;
+}
+
+.container2 .image-container2 .image2:hover img{
+transform: scale(1.1);
+}
+
+
+
+
+
+
+.container3 {
+    position: relative;
+    min-height: 100vh;
+    background-image: radial-gradient( #451B0F,#512316);
+    display: inline;
+}
+
+.container3 .image-container3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container3 .image-container3 .image3 {
+    height: 850px;
+    width: 550px;
+    border: 5px solid #ffff;
+    box-shadow: 0 5px 15px black;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.container3 .image-container3 .image3 img{
+    height: 850px;
+    width: 550px;
+    object-fit: cover;
+    transition:  .2s linear;
+}
+
+.container3 .image-container3 .image3:hover img{
+transform: scale(1.1);
+}
+
+
+
+
 
 
 
@@ -162,19 +282,13 @@ body {
     background-image: linear-gradient(20deg, #f8fcff, #f0f8ff);
 }
 
-h4 { /* fatwood con*/
-    font-family: cursive;
+h4 { /*fatwood con */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 60px;
     color: black;
     margin: 20px 0; /* Adds space between items */
-    margin-left: 200px;
-    width: 180px;
-    padding: 10px; /* Adds space inside the item */
-    border: 2px solid #ccc; /*Adds a border around each item */
-    border-radius: 5px; /* Rounds the corners of the border */
-    background-color: #ffe4c4; /* Sets a light background color */
 }
 
 h3 {
