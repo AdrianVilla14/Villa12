@@ -12,7 +12,8 @@
 header {
     position: fixed;
     top: 0;left: 0;right: 0;
-    background: #ffffff;
+    background-image: radial-gradient( #262626,#313131);
+    /* background: #ffffff;*/
     box-shadow: 0 5px 10px #0000001a;
     padding: 0px 7%;
     display: flex;
@@ -23,7 +24,8 @@ header {
 header .logo{
     font-weight: bolder;
     font-size: 50px;
-    color: #333;
+    color: #eee;
+    /* color: #333; */
     text-decoration: none;
     font-family: cursive;
 
@@ -41,20 +43,24 @@ header .navbar ul li {
 header .navbar ul li a {
 font-size: 20px;
 padding: 20px;
-color: #333;
+color: #eee;
+/* color: #333; */
 display: block;
 }
 
 header .navbar ul li a:hover {
-    background: #333;
-    color:#ffff;
+    /* background: #333; */
+    color: #eee;
+    /* color:#ffff; */
+    background-image: radial-gradient( #262626,#313131);
 }
 
 header .navbar ul li ul {
     position: absolute;
     left: 0;
     width: 200px;
-    background: #fff;
+    /* background: #fff; */
+    background-image: radial-gradient( #262626,#313131);
     display: none;
 }
 
@@ -78,7 +84,8 @@ header .navbar ul li:hover > ul {
 
 header label {
     font-size: 20px;
-    color:#333;
+    color: #eee;
+    /* color:#333; */
     cursor: pointer;
     display: none;
 }
@@ -99,7 +106,8 @@ header label {
     header .navbar {
         position: absolute;
         top:100%;left: 0;right: 0;
-        background: #fff;
+        /* background: #fff; */
+        background-image: radial-gradient( #262626,#313131);
         border-top: 1px solid #0000001a;
         display: none;
     }
@@ -114,7 +122,8 @@ header label {
     }
 
     header .navbar ul li ul li {
-        background: #eee;
+        /* background: #eee; */
+        background: #ccc;
     }
 
     header .navbar ul li ul li ul {
@@ -208,4 +217,44 @@ transform: scale(1.1);
 @media (max-width:769px){
     .container .popup-image img{
         width: 95%;}
+}
+
+
+
+
+
+.content1{
+   padding: 5px; /* Adds space inside the item */
+   border: 2px solid #ccc; /*Adds a border around each item */
+   border-radius: 5px; /* Rounds the corners of the border */
+   background-color:#f5f5f5; /* Sets a light background color */
+   width: 900px;
+   margin-left: 200px;
+   margin-top: 100px;
+   }
+
+
+
+
+.content1 h1 {
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.content1IMG {
+padding: 10px 10px;
+margin-left: 30px;
+}
+
+.contentT{
+    margin-top: 10px;
+    padding: 5px; /* Adds space inside the item */
+    border: 2px solid #ccc; /*Adds a border around each item */
+    border-radius: 5px; /* Rounds the corners of the border */
+    background-color:#f5f5f5; /* Sets a light background color */
+    width: 900px;
+    margin-left: 200px;
+    font-size: 20px;
 }

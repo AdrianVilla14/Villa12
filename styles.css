@@ -10,7 +10,8 @@
 header {
     position: fixed;
     top: 0;left: 0;right: 0;
-    background: #ffffff;
+    background-image: radial-gradient( #262626,#313131);
+    /* background: #ffffff;*/
     box-shadow: 0 5px 10px #0000001a;
     padding: 0px 7%;
     display: flex;
@@ -20,10 +21,12 @@ header {
 }
 header .logo{
     font-weight: bolder;
-    font-size: 50px;
-    color: #333;
+    font-size: 70px;
+    color: #eee;
+    /* color: #333; */
     text-decoration: none;
-    font-family: cursive;
+    font-family: "Caveat", cursive;
+
 
 }
 
@@ -39,20 +42,24 @@ header .navbar ul li {
 header .navbar ul li a {
 font-size: 20px;
 padding: 20px;
-color: #333;
+color: #eee;
+/* color: #333; */
 display: block;
 }
 
 header .navbar ul li a:hover {
-    background: #333;
-    color:#ffff;
+    /* background: #333; */
+    color: #eee;
+    /* color:#ffff; */
+    background-image: radial-gradient( #262626,#313131);
 }
 
 header .navbar ul li ul {
     position: absolute;
     left: 0;
     width: 200px;
-    background: #fff;
+    /* background: #fff; */
+    background-image: radial-gradient( #262626,#313131);
     display: none;
 }
 
@@ -76,11 +83,11 @@ header .navbar ul li:hover > ul {
 
 header label {
     font-size: 20px;
-    color:#333;
+    color: #eee;
+    /* color:#333; */
     cursor: pointer;
     display: none;
 }
-
 
 
 
@@ -97,7 +104,8 @@ header label {
     header .navbar {
         position: absolute;
         top:100%;left: 0;right: 0;
-        background: #fff;
+        /* background: #fff; */
+        background-image: radial-gradient( #262626,#313131);
         border-top: 1px solid #0000001a;
         display: none;
     }
@@ -112,7 +120,8 @@ header label {
     }
 
     header .navbar ul li ul li {
-        background: #eee;
+        /* background: #eee; */
+        background: #ccc;
     }
 
     header .navbar ul li ul li ul {
@@ -178,59 +187,29 @@ transform: scale(1.1);
     padding: 15px;
   }
 
+  .specL4 {
+    gap:15px; 
+    justify-content: space-between;
+    display: block;
+}
+
    .spec {
     margin: 30px, 0;
     padding: 5px; /* Adds space inside the item */
     border: 2px solid #ccc; /*Adds a border around each item */
     border-radius: 5px; /* Rounds the corners of the border */
     background-color:#f5f5f5; /* Sets a light background color */
-    width: 900px;
-    margin-left: 200px;
-    height: 700px;
+    width: 600px;
+    margin-bottom: 100px;
+    margin-left: 500px;
+    height: 600px;
     overflow: hidden;
+    
   } 
-.specL4 {
-    justify-content:space-between;
-    display: flex;
-    gap:15px
-}
 
 
 
-  .container2 {
-    position: relative;
-    min-height: 100vh;
-    background-image: radial-gradient( #451B0F,#512316);
-    display: inline;
-}
 
-.container2 .image-container2 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    padding: 10px;
-}
-
-.container2 .image-container2 .image2 {
-    height: 950px;
-    width: 650px;
-    border: 5px solid #ffff;
-    box-shadow: 0 5px 15px black;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.container2 .image-container2 .image2 img{
-    height: 950px;
-    width: 650px;
-    object-fit: cover;
-    transition:  .2s linear;
-}
-
-.container2 .image-container2 .image2:hover img{
-transform: scale(1.1);
-}
 
 
 
@@ -253,8 +232,8 @@ transform: scale(1.1);
 }
 
 .container3 .image-container3 .image3 {
-    height: 850px;
-    width: 550px;
+    height: 322px;
+    width: 300px;
     border: 5px solid #ffff;
     box-shadow: 0 5px 15px black;
     overflow: hidden;
@@ -262,8 +241,8 @@ transform: scale(1.1);
 }
 
 .container3 .image-container3 .image3 img{
-    height: 850px;
-    width: 550px;
+    height: 322px;
+    width: 300px;
     object-fit: cover;
     transition:  .2s linear;
 }
@@ -328,5 +307,6 @@ list-style-type: none; /* Remove bullet points */
     height: 200px;
 }
  
+
 
 
