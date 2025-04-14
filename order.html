@@ -1,16 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <header>
          <div>
             <a href="index.html">Back to home page</a>
          </div>
     </header>
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order your product </title>
+    <link rel="stylesheet" href="styles4.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     </head>
 
     
     <body>
-<p></p>
+        <div class="wrapper">
+            <h2>Payment Form</h2>
+            <form action="" method="POST">
+                <!---- ACCOUnt inFo START-->
+                <h4>Account</h4>
+                <div class="input_group">
+                    <div class="input_box">
+                        <input type="text" placeholder="Full Name" required 
+                        class="name">
+                        <i class="fa fa-user icon"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="text" placeholder="Name on card" required 
+                        class="name">
+                        <i class="fa fa-user icon"></i>
+                    </div>
+                </div>
+
+                <div class="input_group">
+                    <div class="input_box">
+                        <input type="email" placeholder="Email Address" required 
+                        class="name">
+                        <i class="fa fa-envlope icon"></i>
+                    </div>
+                </div>
+
+                <div class="input_group">
+                    <div class="input_box">
+                        <input type="text" placeholder="Address" required 
+                        class="name">
+                        <i class="fa fa-map-marker icon" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="input_group">
+                    <div class="input_box">
+                        <input type="text" placeholder="city" required 
+                        class="name">
+                        <i class="fa fa-institution icon"></i>
+                    </div>
+                </div>
+                <!--- ACC InfO END-->
+
+                <div class="input_group">
+                    <div class="input_box">
+                        <h4>Date of Birth</h4>
+                        <input type="text" placeholder="DD" required 
+                        class="dob"> 
+                        <input type="text" placeholder="MM" required 
+                        class="dob">
+                        <input type="text" placeholder="YYYY" required 
+                        class="dob">
+                    </div>
+                    <div class="input_box">
+                        <input type="radio" name="gender" required  id="b1"
+                        checked>
+                        <label for="b1">Male</label>
+                        <input type="radio" name="gender" required  id="b2"
+                        checked>
+                        <label for="b2">Female</label>
+                    </div>
+                </div>
+                 <!--- DOB AND GENDER-->
+
+                 <!-- Payment Deatails start-->
+                  <div class="input_group">
+                    <div class="input_box">
+                        <h4>Payment Details</h4>
+                        <input type="radio" name="pay"class="radio"
+                        id="bc1" checked>
+                        <label for="bc1"><span>
+                            <i class="fa fa-cc-visa"></i>Credit Card
+                        </span></label>
+                        <input type="radio" name="pay"class="radio"
+                        id="bc2" checked>
+                        <label for="bc2"><span>
+                            <i class="fa fa-cc-paypal"></i>Paypal
+                        </span></label>
+                    </div>
+                  </div>
+                  <div class="input_group">
+                    <div class="input_box">
+                    <input type="tel" class="name" placeholder="Card 
+                    Number 1111-2222-3333-4444" required>
+                    <i class="fa fa-credit-card" icon></i>
+                    </div>
+                </div>
+
+
+                 <!-- Payment Deatails END-->
+
+            </form>
+        </div>
+
+
     </body>
 </html>
