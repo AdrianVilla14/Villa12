@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+    
+      <header>
+
+        <a href="#" class="logo">Villalon's Farm Livestock</a>
+   
+        <input type="checkbox"  id="menu-bar">
+        <label for="menu-bar">Menu</label>
+   
+        <nav class="navbar">
+          <ul>
+              <li>
+                 <a href="index-EN.html">Home</a>
+              </li> 
+              <li>
+                  <a href="aboutus-EN.html">About us</a>
+              </li>
+              <li> <a href="#"> Languages 🢓</a>
+                  <ul>
+                      <li><a href="#"> English</a>
+                      <ul>
+                          <li><a href="#">Translate to English'</a></li>
+                      </ul>
+                  </li>
+                      <li><a href="#"> Espanol</a>
+                          <ul>
+                              <li><a href="#">  <button id="navigateButton">Traducir al Español</button>
+                                  <script>
+                                      document.getElementById('navigateButton').addEventListener('click', function() {
+                                        // Navigate to the second page
+                                        window.location.href = 'index-ES.html';
+                                      });
+                                    </script>
+                              </a></li>
+                          </ul>                        
+                      </li>
+                  </ul> 
+              </li>
+              <li>
+                  <a href="eggs-EN.html"> Eggs</a>
+              </li>
+              <li>
+                  <a href="chickens-EN.html"> Chickens</a>
+              </li>
+              <li>
+                  <a href="order-EN.html">Order</a>
+              </li>
+              </ul>
+              
+      </nav>
+   
+       </header>
+    
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Villalon's Chickens &amp; breeds</title>
+    <link rel="stylesheet" href="styles2.css">
+    </head>
+
+    
+    <body>
+      <div class="container">
+
+      <div class="image-container">
+
+          <div class="image"><img src="https://raw.githubusercontent.com/AdrianVilla14/Fatwood/refs/heads/main/black%20chick.jpg" alt="chicken"/>
+          </div>
+          <div class="image"><img src="https://raw.githubusercontent.com/AdrianVilla14/Fatwood/refs/heads/main/yellow2.jpg" alt="chicken"/>
+          </div>
+          <div class="image"><img src="https://raw.githubusercontent.com/AdrianVilla14/Fatwood/refs/heads/main/IMG_20250409_192843.png" alt="chicken"/>
+          </div>
+          <div class="image"><img src="https://raw.githubusercontent.com/AdrianVilla14/Fatwood/refs/heads/main/IMG_20250409_192220.png" alt="chicken"/>
+          </div>
+          <div class="image"><img src="https://raw.githubusercontent.com/AdrianVilla14/Fatwood/refs/heads/main/IMG_20250409_192047.png" alt="chicken"/>
+          </div>
+
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="https://raw.githubusercontent.com/AdrianVilla14/Fatwood/refs/heads/main/black%20chick.jpg" alt=""/>
+
+        </div>
+      </div>
+
+      </div>
+
+        <script>
+
+        document.querySelectorAll('.image-container img').forEach(image=>{
+          image.onclick=()=>{
+            document.querySelector('.popup-image').style.display = 'block';
+            document.querySelector('.popup-image img').src = image.getAttribute('src');
+
+          }
+        });
+
+        document.querySelector('.popup-image span').onclick =() => {
+          document.querySelector('.popup-image').style.display = 'none';
+
+        }
+
+        </script>
+        <div class="content1">
+<div>
+
+        <h1>Australorp Chicken's</h1>
+        <div class="content1IMG">
+        <img src="https://static.wixstatic.com/media/bb9498_b4acd5cbee8849ffb34caba98d79ea57~mv2.jpeg/v1/fill/w_520,h_533,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/bb9498_b4acd5cbee8849ffb34caba98d79ea57~mv2.jpeg" alt=""/>
+        </div>
+        <p>The Australorp is a type of chicken from Australia that can be used for both<strong> eggs </strong> 
+          and <strong> meat </strong>. It comes from the British Black Orpington and was specially bred to be good at laying eggs.
+           Some of these hens<strong><em> can lay over 300 eggs in a year</em></strong>.
+          It became famous around the world in the 1920s after this breed set many records for the most eggs laid. 
+          Since then it has remained a popular choice in the western world. It is one of eight chicken breeds developed in Australia and approved by the Australian Poultry Standards. 
+          typically laying between 250 and 300 large brown eggs per year. 
+          They are considered one of the best egg-laying breeds and are known for laying year-round, even during colder months. </p>
+</div>
+        </div>
+<div class="contentT">
+          <table bgcolor="black">
+            <tr bgcolor="grey">
+              <th>Breed</th>
+              <th>Gender</th>
+              <th>Eggs?</th>
+              <th>Egg's Production</th>
+              <th>Broody rate per year</th>
+              <th>Age at sell</th>
+              <th>Avaiblity</th>
+              <th>Price</th>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+              <td>Black-Australorp</td>
+              <td> Female </td>
+              <td> Yes </td>
+              <td> 250-300+ per year </td>
+              <td> 3-8 times per year</td>
+              <td> 2-4 weeks </td>
+              <td> ? </td>
+              <td> $7.00 USD,per chick </td>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+              <td>Black-Australorp</td>
+              <td> Male </td>
+              <td> No </td>
+              <td> None </td>
+              <td> Doesn't</td>
+              <td> 2-4 weeks </td>
+              <td> ? </td>
+              <td> $7.00 USD,per chick </td>
+            </tr>
+          </table>
+</div>
+
+<div class="content1">
+  <div>
+  
+          <h1>Rhode Island Red Chickens</h1>
+          <div class="content1IMG">
+          <img src="https://a-z-animals.com/media/2023/08/GettyImages-605786624.jpg" height="400" width="600" alt=""/>
+          </div>
+          <p>The Rhode Island Red is a type of chicken that comes from America. It is the official bird of Rhode Island. 
+             It was created in that area and in Massachusetts during the late 1800s by mixing birds from Asia like the Malay with brown Leghorn birds from Italy. 
+             This breed was created for two main reasons: to produce both meat and eggs. 
+             Today newer types have been specially developed to lay more eggs.
+             They begin laying around 5-6 months of age and continue for several years, with their peak laying typically occurring in the first 2-3 years.  </p>
+  </div>
+          </div>
+  <div class="contentT">
+            <table bgcolor="black">
+              <tr bgcolor="grey">
+                <th>Breed</th>
+                <th>Gender</th>
+                <th>Eggs?</th>
+                <th>Egg's Production</th>
+                <th>Broody rate per year</th>
+                <th>Age at sell</th>
+                <th>Avaiblity</th>
+                <th>Price</th>
+              </tr>
+              <tr bgcolor="lightgrey" align="center">
+                <td>Rhode Island Red</td>
+                <td> Female </td>
+                <td> Yes </td>
+                <td> 200-300 eggs per year </td>
+                <td> 3-8 times per year</td>
+                <td> 2-4 weeks </td>
+                <td> ? </td>
+                <td> $7.00 USD,per chick </td>
+              </tr>
+              <tr bgcolor="lightgrey" align="center">
+                <td>Rhode Island Red</td>
+                <td> Male </td>
+                <td> No </td>
+                <td> None </td>
+                <td> Doesn't</td>
+                <td> 2-4 weeks </td>
+                <td> ? </td>
+                <td> $7.00 USD,per chick </td>
+              </tr>
+            </table>
+  </div>
+
+
+  <div class="content1">
+    <div>
+    
+            <h1>ISA Brown Chickens</h1>
+            <div class="content1IMG">
+            <img src="https://static.wixstatic.com/media/39108b_fae74397f82047c5a6a2912cff1d04a5~mv2.jpg/v1/fill/w_600,h_800,al_c,q_85,enc_avif,quality_auto/39108b_fae74397f82047c5a6a2912cff1d04a5~mv2.jpg" height="667" width="500" alt=""/>
+            </div>
+            <p>The ISA Brown is a type of chicken that is a mix of different breeds and its color helps tell if it is male or female.
+               Experts believe that it came from a complicated mix of different chicken breeds including Rhode Island Reds and Rhode Island Whites. 
+               It also has genes from many other breeds but the details about these breeds are kept secret.
+              It is recognized for producing a lot of eggs around 300 eggs for each hen in its first year of laying.</p>
+    </div>
+            </div>
+    <div class="contentT">
+              <table bgcolor="black">
+                <tr bgcolor="grey">
+                  <th>Breed</th>
+                  <th>Gender</th>
+                  <th>Eggs?</th>
+                  <th>Egg's Production</th>
+                  <th>Broody rate per year</th>
+                  <th>Age at sell</th>
+                  <th>Avaiblity</th>
+                  <th>Price</th>
+                </tr>
+                <tr bgcolor="lightgrey" align="center">
+                  <td>ISA Brown</td>
+                  <td> Female </td>
+                  <td> Yes </td>
+                  <td> 200-300 eggs per year </td>
+                  <td> 3-8 times per year</td>
+                  <td> 2-4 weeks </td>
+                  <td> ? </td>
+                  <td> $7.00 USD,per chick </td>
+                </tr>
+                <tr bgcolor="lightgrey" align="center">
+                  <td>ISA Brown</td>
+                  <td> Male </td>
+                  <td> No </td>
+                  <td> None </td>
+                  <td> Doesn't</td>
+                  <td> 2-4 weeks </td>
+                  <td> ? </td>
+                  <td> $7.00 USD,per chick </td>
+                </tr>
+              </table>
+    </div>
+
+    </body>
+</html>

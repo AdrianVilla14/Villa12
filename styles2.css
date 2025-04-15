@@ -258,3 +258,19 @@ margin-left: 30px;
     margin-left: 200px;
     font-size: 20px;
 }
+
+button{
+    background-color: #5bd183;
+    border-radius: 20px;
+    border-color: black;
+    font-size: 22px;
+    padding: 10px 18px;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+
+button:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
